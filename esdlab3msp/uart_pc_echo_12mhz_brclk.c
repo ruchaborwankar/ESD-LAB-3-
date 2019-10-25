@@ -248,7 +248,7 @@ void PORT1_IRQHandler(void)
     {
         if(pwmConfig.dutyCycle == 28800)
         {       pwmConfig.dutyCycle = 3200;
-        num=0;
+        num=10;
         }
         else
             pwmConfig.dutyCycle += 3200;
@@ -258,7 +258,7 @@ void PORT1_IRQHandler(void)
     }
     if (status & GPIO_PIN4)
             {
-                if(pwmConfig.dutyCycle ==0)
+                if(pwmConfig.dutyCycle ==6400)
                 {
                pwmConfig.dutyCycle = 28800;
                 num=100;
